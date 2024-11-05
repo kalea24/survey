@@ -6,48 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Survey Form</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <h1 id="title">Dog Food Survey</h1>
+  <section class="head">
+    <h1 id="title">Survey for furry parents</h1>
 
-  <p id="description">Please fill out the form below</p>
+    <p id="description">Please fill out the form below and tell us about your fur baby</p>
+  </section>
 
-  <form id="survey-form">
+    <form id="survey-form">
 
     <label id="name-label" for="name">Name:</label>
-    <input id="name" type="text" placeholder="Enter your name" required>
+    <input id="name" type="text" placeholder="Enter your furry pet's name" required>
 
     <label id="email-label" for="email">Email:</label>
     <input id="email" type="email" placeholder="Enter your email" required>
 
     <label id="number-label" for="number">Age:</label>
-    <input id="number" type="number" placeholder="Enter your age" min="18" max="99" required>
+    <input id="number" type="number" placeholder="Enter your pet's age" min="1" max="99" required>
 
     <label for="dropdown">Your Dog's Breed:</label>
     <select id="dropdown">
-      <option value="red">Golden Retriever</option>
-      <option value="blue">Corgi</option>
-      <option value="green">German Shepherd</option>
+      <option value="Golden Retriever">Golden Retriever</option>
+      <option value="Corgi">Corgi</option>
+      <option value="German Shepherd">German Shepherd</option>
+      <option value="Chihuahua">Chihuahua</option>
+      <option value="Terrier">Terrier</option>
+      <option value="Labrador">Labrador</option>
+      <option value="Pug">Pug</option>
+      <option value="Bulldog">Bulldog</option>
+      <option value="Aspen">Aspen</option>
+      <option value="Mixed">Mixed</option>
+      <option value="Other">Other</option>
     </select>
+    <section class="choices">
+      <p>How often do you play with your dog/s?</p>
+      <input type="radio" id="daily" name="usage" value="daily">
+      <label for="daily">Daily</label><br>
+      <input type="radio" id="weekly" name="usage" value="weekly">
+      <label for="weekly">Weekly</label><br>
+      <input type="radio" id="monthly" name="usage" value="monthly">
+      <label for="monthly">Monthly</label>
 
-    <p>How often do you play with your dog/s?</p>
-    <input type="radio" id="daily" name="usage" value="daily">
-    <label for="daily">Daily</label><br>
-    <input type="radio" id="weekly" name="usage" value="weekly">
-    <label for="weekly">Weekly</label><br>
-    <input type="radio" id="monthly" name="usage" value="monthly">
-    <label for="monthly">Monthly</label>
-
-    <p>Select your preferred dog food brands:</p>
-    <input type="checkbox" id="brand1" name="brand" value="brand1">
-    <label for="brand1">Pedigree</label><br>
-    <input type="checkbox" id="brand2" name="brand" value="brand2">
-    <label for="brand2">Bow wow</label><br>
-    <input type="checkbox" id="brand3" name="brand" value="brand3">
-    <label for="brand3">Others</label>
-
-    <p>Additional comments:</p>
+      <p>What is your favorite past time  with your furbaby? </p>
+      <input type="checkbox" id="brand1" name="brand" value="brand1">
+      <label for="brand1">Bellyrubs</label><br>
+      <input type="checkbox" id="brand2" name="brand" value="brand2">
+      <label for="brand2">Fetch</label><br>
+      <input type="checkbox" id="brand3" name="brand" value="brand3">
+      <label for="brand3">Outdoor Walks</label>
+    </section>
+    <p>Tell us more: </p>
     <textarea id="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
 
     <button id="submit" type="submit">Submit</button>

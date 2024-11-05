@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: Noto Sans;
+    background-color: #1d1a31;
     padding: 20px;
   }
   
@@ -8,14 +8,18 @@ body {
     text-align: center;
     color: #333;
   }
-  
+  .head h1, p {
+    color: #9a4c95;
+    text-align: center;
+  }
+
   #survey-form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #c1a5a9;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   }
   
   label {
@@ -32,6 +36,9 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+input:hover {
+  background-color: #1d1a31;
+}
 
   input[type="radio"], input[type="checkbox"] {
     width: auto;
@@ -39,7 +46,7 @@ body {
   }
 
   button {
-    background-color: #28a745;
+    background-color: #4d2d52;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -48,5 +55,10 @@ body {
   }
 
   button:hover {
-    background-color: #218838;
+    background-color: #f08cae;
+  }
+
+  .choices {
+    align-items: center;
+    text-align: center;
   }
